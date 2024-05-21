@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  --s: 150px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+header {
+  text-align: center;
+  background-color: #292929;
+  padding: 4vh;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 5vh;
+}
+
+.container {
+  height: 675px;
+  margin: 5vh;
+  width: 420px;
+  background: rgba(115, 115, 110, 0.9);
+  color: black;
+  padding: 30px 40px;
+  border-radius: 40px;
+  border: solid 3px #ffff;
+}
+
+button {
+  display: block;
+  margin: 5vh;
+  width: 23vh;
+  height: 6vh;
+  border-radius: 5vh;
+  transition: all 100ms ease-in;
+}
+
+button:hover {
+  background-color: #616161;
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: solid 2px #ffffff;
+}
+
+input {
+  display: block;
+  margin: 2vh;
+  padding: 1vh;
+  border-radius: 5vh;
+  width: 30vh;
+}
+
+input:focus {
+  border: 2px solid #292929;
+}
+
+input:focus-visible {
+  color: gray !important;
+}
+
+.container a {
+  text-transform: uppercase;
+  color: #292929;
+  font-size: 15px;
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.container a:active {
+  font-weight: bolder;
+}
