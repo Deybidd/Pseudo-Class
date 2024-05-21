@@ -68,6 +68,12 @@ button:hover {
   border: solid 2px #ffffff;
 }
 
+button:active {
+  background-color: #FFFFFF;
+  color: #1d1d1d;
+  border: solid 2px #1d1d1d;
+}
+
 input {
   display: block;
   margin: 2vh;
